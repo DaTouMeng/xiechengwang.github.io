@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+        }
+        header > a {
+            flex: 1;
+        }
+        header > a > img {
+            width: 100%;
+        }
+
+        .items {
+            width: 100%;
+            /*设置盒模型*/
+            box-sizing: border-box;
+
+        }
+        .item {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .item .left {
+            flex: 1;
+        }
+        .item .right {
+            flex: 2;
+            /*设置换行显示*/
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .item .right > a {
+            display: block;
+            width: 50%;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+            line-height: 50px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            /*设置内容区从边框*/
+            box-sizing: border-box;
+        }
+
+        .item .right > a:nth-last-of-type(-n+2) {
+            border-bottom: none;
+        }
+        .items > .item:nth-of-type(1) {
+            background-color: #00aa00;
+        }
+        .items > .item:nth-of-type(2) {
+            background-color: pink;
+        }
+        .items > .item:nth-of-type(3) {
+            background-color: #abcdef;
+        }
+        .items > .item:nth-of-type(4) {
+            background-color: yellow;
+        }
+        .items > .extra {
+            width: 100%;
+            display: flex;
+        }
+        .items > .extra > a {
+            flex: 1;
+        }
+        .items > .extra > a > img {
+            width: 100%;
+        }
+
+        footer > nav {
+            width: 100%;
+            display: flex;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #cccccc;
+        }
+        footer > nav > a {
+            flex: 1;
+            text-decoration: none;
+            text-align: center;
+            line-height: 25px;
+            color: #3c3c3c;
+        }
+
+        footer > p {
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="javascript:;">
+            <img src="img/banner.jpg" alt="">
+        </a>
+    </header>
+    <main class="items">
+        <section class="item">
+            <div class="left"></div>
+            <div class="right">
+                <a href="javascript:;">海外酒店</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">特惠酒店</a>
+                <a href="javascript:;">客栈公寓</a>
+            </div>
+        </section>
+        <section class="item">
+            <div class="left"></div>
+            <div class="right">
+                <a href="javascript:;">海外酒店</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">特惠酒店</a>
+                <a href="javascript:;">客栈公寓</a>
+            </div>
+        </section>
+        <section class="item">
+            <div class="left"></div>
+            <div class="right">
+                <a href="javascript:;">海外酒店</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">特惠酒店</a>
+                <a href="javascript:;">客栈公寓</a>
+            </div>
+        </section>
+        <section class="item">
+            <div class="left"></div>
+            <div class="right">
+                <a href="javascript:;">海外酒店</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">特惠酒店</a>
+                <a href="javascript:;">客栈公寓</a>
+            </div>
+        </section>
+        <section class="extra">
+            <a href="javascript:;">
+                <img src="img/extra_1.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="img/extra_2.png" alt="">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="javascript:;">电话预订</a>
+            <a href="javascript:;">下载客户端</a>
+            <a href="javascript:;">我的订单</a>
+        </nav>
+        <p>
+            <a href="javascript:;">网站地图</a>&nbsp;
+            <a href="javascript:;">ENGLISH</a>&nbsp;
+            <a href="javascript:;">电脑版</a>
+        </p>
+        <p>&copy;2015 携程旅行</p>
+
+    </footer>
+</div>
+</body>
+</html>
